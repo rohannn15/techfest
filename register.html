@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TechMantra Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 30px;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #0a3d62;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 15px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #0a3d62;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #07507a;
+    }
+
+    a {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+      color: #0a3d62;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>TechMantra 2025 - Registration Form</h2>
+    <form action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="event">Select Event:</label>
+      <select id="event" name="event" required>
+        <option value="">-- Choose an Event --</option>
+        <option value="hackathon">Hackathon</option>
+        <option value="chess">Chess Tournament</option>
+        <option value="robotics">Robotics Challenge</option>
+        <option value="paper">Paper Presentation</option>
+        <option value="quiz">Tech Quiz</option>
+        <option value="poster">Poster Design</option>
+      </select>
+
+      <label for="message">Message (Optional):</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <input type="submit" value="Submit Registration">
+    </form>
+
+    <a href="index.html"> Back to 🏠</a>
+  </div>
+</body>
+</html>
